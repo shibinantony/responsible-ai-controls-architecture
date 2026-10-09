@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradHeader2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <filter id="shadow2" x="-2%" y="-2%" width="104%" height="106%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="480" fill="#F8FAFC" rx="16"/>
+  <rect x="40" y="30" width="880" height="55" rx="8" fill="url(#gradHeader2)"/>
+  <text x="60" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Day 2 Operations: The Continuous Governance Telemetry Loop</text>
+  <text x="890" y="65" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94A3B8">Post-Deployment Monitoring &amp; Resilience</text>
+
+  <!-- Left Box: Controls That Run -->
+  <g filter="url(#shadow2)">
+    <rect x="60" y="115" width="380" height="320" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="60" y="115" width="380" height="45" rx="12" fill="#0F6E56"/>
+    <text x="250" y="143" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">Runtime Enforcements (Active Controls)</text>
+
+    <g transform="translate(80, 180)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#1E293B">
+      <circle cx="10" cy="10" r="5" fill="#10B981"/>
+      <text x="28" y="14" font-weight="600">Real-time Input/Output Guardrails</text>
+      <text x="28" y="32" font-size="11" fill="#64748B">Blocks jailbreaks, PII leakage &amp; hallucinations</text>
+
+      <circle cx="10" cy="65" r="5" fill="#10B981"/>
+      <text x="28" y="69" font-weight="600">Human-in-the-Loop Triggers</text>
+      <text x="28" y="87" font-size="11" fill="#64748B">High-risk actions paused for explicit sign-off</text>
+
+      <circle cx="10" cy="120" r="5" fill="#10B981"/>
+      <text x="28" y="124" font-weight="600">Cryptographic Evidence Logging</text>
+      <text x="28" y="142" font-size="11" fill="#64748B">Audit-ready replay trails with SHA-256 hashes</text>
+
+      <circle cx="10" cy="175" r="5" fill="#10B981"/>
+      <text x="28" y="179" font-weight="600">Exception &amp; Override Handling</text>
+      <text x="28" y="197" font-size="11" fill="#64748B">Logged rationale when business overrides AI</text>
+    </g>
+  </g>
+
+  <!-- Right Box: Signals Triggering Action -->
+  <g filter="url(#shadow2)">
+    <rect x="520" y="115" width="380" height="320" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="520" y="115" width="380" height="45" rx="12" fill="#DC2626"/>
+    <text x="710" y="143" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">Operational Triggers (Day 2 Signals)</text>
+
+    <g transform="translate(540, 180)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#1E293B">
+      <circle cx="10" cy="10" r="5" fill="#EF4444"/>
+      <text x="28" y="14" font-weight="600">Quality &amp; Context Drift</text>
+      <text x="28" y="32" font-size="11" fill="#64748B">Retrieval decay, citation drops &amp; relevance loss</text>
+
+      <circle cx="10" cy="65" r="5" fill="#EF4444"/>
+      <text x="28" y="69" font-weight="600">Control Bypass &amp; Adversarial Probes</text>
+      <text x="28" y="87" font-size="11" fill="#64748B">Automated alerts on repeated guardrail strikes</text>
+
+      <circle cx="10" cy="120" r="5" fill="#EF4444"/>
+      <text x="28" y="124" font-weight="600">Foundation Model &amp; Vendor Updates</text>
+      <text x="28" y="142" font-size="11" fill="#64748B">Regression checks upon hyperscaler deprecations</text>
+
+      <circle cx="10" cy="175" r="5" fill="#EF4444"/>
+      <text x="28" y="179" font-weight="600">Operational Incident Triage</text>
+      <text x="28" y="197" font-size="11" fill="#64748B">Post-incident control tuning into Policy-as-Code</text>
+    </g>
+  </g>
+
+  <!-- Bi-directional Connector -->
+  <path d="M 445 275 L 515 275" stroke="#0F6E56" stroke-width="3" stroke-dasharray="6 4" fill="none"/>
+  <polygon points="515,270 525,275 515,280" fill="#0F6E56"/>
+  <polygon points="445,270 435,275 445,280" fill="#0F6E56"/>
+  <text x="480" y="260" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#0F6E56">Continuous Feedback</text>
+</svg>

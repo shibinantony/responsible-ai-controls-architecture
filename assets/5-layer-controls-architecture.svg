@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F6E56"/>
+      <stop offset="100%" stop-color="#1D9E75"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="106%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="540" fill="#F8FAFC" rx="16"/>
+  
+  <!-- Title Bar -->
+  <rect x="40" y="30" width="880" height="60" rx="8" fill="url(#gradHeader)"/>
+  <text x="60" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">Responsible AI Controls Architecture — The 5-Layer Model</text>
+  <text x="890" y="68" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#E1F5EE">From Ethics Principles to Day 2 Operations</text>
+
+  <!-- Layers Container -->
+  <!-- Layer 1 -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="110" width="880" height="68" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="40" y="110" width="8" height="68" rx="4" fill="#3B82F6"/>
+    <rect x="60" y="122" width="32" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="76" y="149" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#1D4ED8">01</text>
+    <text x="108" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#0F172A">Risk Classification Layer</text>
+    <text x="108" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">Executive Question: What happens if the AI is wrong? Tiering by customer, financial, legal &amp; safety blast radius.</text>
+    <rect x="740" y="128" width="160" height="32" rx="6" fill="#F1F5F9"/>
+    <text x="820" y="148" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#334155">Risk Tier Scorecard</text>
+  </g>
+
+  <!-- Layer 2 -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="190" width="880" height="68" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="40" y="190" width="8" height="68" rx="4" fill="#0EA5E9"/>
+    <rect x="60" y="202" width="32" height="44" rx="6" fill="#F0F9FF"/>
+    <text x="76" y="229" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#0284C7">02</text>
+    <text x="108" y="218" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#0F172A">Execution Boundary Layer</text>
+    <text x="108" y="238" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">Executive Question: What can the AI decide or trigger? Bounded decision rights: Draft vs. Recommend vs. Execute.</text>
+    <rect x="740" y="208" width="160" height="32" rx="6" fill="#F1F5F9"/>
+    <text x="820" y="228" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#334155">Decision Rights Matrix</text>
+  </g>
+
+  <!-- Layer 3 -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="270" width="880" height="68" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="40" y="270" width="8" height="68" rx="4" fill="#10B981"/>
+    <rect x="60" y="282" width="32" height="44" rx="6" fill="#ECFDF5"/>
+    <text x="76" y="309" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#059669">03</text>
+    <text x="108" y="298" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#0F172A">Control Design Layer</text>
+    <text x="108" y="318" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">Executive Question: What prevents or detects misuse? Input/output guardrails, RAG grounding &amp; HITL approval triggers.</text>
+    <rect x="740" y="288" width="160" height="32" rx="6" fill="#F1F5F9"/>
+    <text x="820" y="308" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#334155">Policy-as-Code Gates</text>
+  </g>
+
+  <!-- Layer 4 -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="350" width="880" height="68" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="40" y="350" width="8" height="68" rx="4" fill="#F59E0B"/>
+    <rect x="60" y="362" width="32" height="44" rx="6" fill="#FFFBEB"/>
+    <text x="76" y="389" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#D97706">04</text>
+    <text x="108" y="378" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#0F172A">Evidence Capture Layer</text>
+    <text x="108" y="398" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">Executive Question: Can we prove what happened later? Prompts, sources, model versions, human approvals &amp; audit replay logs.</text>
+    <rect x="740" y="368" width="160" height="32" rx="6" fill="#F1F5F9"/>
+    <text x="820" y="388" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#334155">Immutable Audit Ledger</text>
+  </g>
+
+  <!-- Layer 5 -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="430" width="880" height="68" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    <rect x="40" y="430" width="8" height="68" rx="4" fill="#8B5CF6"/>
+    <rect x="60" y="442" width="32" height="44" rx="6" fill="#F5F3FF"/>
+    <text x="76" y="469" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#7C3AED">05</text>
+    <text x="108" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#0F172A">Day 2 Monitoring Layer</text>
+    <text x="108" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#64748B">Executive Question: How do we know controls keep working? Metric drift, bypass alarms, vendor shifts &amp; incident runbooks.</text>
+    <rect x="740" y="448" width="160" height="32" rx="6" fill="#F1F5F9"/>
+    <text x="820" y="468" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#334155">Runtime Telemetry Hub</text>
+  </g>
+</svg>

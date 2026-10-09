@@ -1,16 +1,15 @@
 # Responsible AI Controls Architecture: 5-Slide Mini Deck
 
-> **Executive Deck:** Operationalizing Responsible AI from Principles to Controls  
-> **Format:** CXO Board / Committee Presentation  
-> **Original Slides:** Available as PowerPoint in [`03-five-slide-mini-deck.pptx`](03-five-slide-mini-deck.pptx)
+> **Navigation:** [🏠 Overview](../README.md) | [📰 01. Thought Leadership](01-thought-leadership-article.md) | [📄 02. Consulting POV](02-one-page-consulting-pov.md) | **📊 03. Mini Deck** | [📋 04. Discovery Checklist](04-enterprise-client-discovery-checklist.md)  
+> **Source Asset:** [📥 Download 03-five-slide-mini-deck.pptx](03-five-slide-mini-deck.pptx)
 
 ---
 
 ## Slide 1: The Execution Gap
 
-### CXO POINT OF VIEW
+### CXO Point of View
 **Responsible AI must move from principles to controls.**  
-A practical model for turning AI ethics, risk, and governance expectations into enforceable controls, evidence, monitoring, and operating routines.
+A practical model for turning AI ethics, risk, and governance expectations into enforceable controls, immutable evidence, continuous monitoring, and operating routines.
 
 ```
 ┌────────────────────────────────────────────────────────┐
@@ -23,23 +22,25 @@ A practical model for turning AI ethics, risk, and governance expectations into 
 └────────────────────────────────────────────────────────┘
 ```
 
-*Key Takeaway:* Most enterprises possess an AI Ethics Charter. Very few possess the runtime controls, evidence ledgers, and operational ownership required to prove compliance when an incident or regulatory audit occurs.
+> **The Executive Insight:**  
+> Most enterprises possess an AI Ethics Charter. Very few possess the runtime controls, immutable evidence ledgers, and operational ownership required to satisfy regulators and boards when an incident or audit occurs.
 
 ---
 
 ## Slide 2: The Five-Layer Controls Architecture
 
-### RESPONSIBLE AI CONTROLS ARCHITECTURE
-**The five-layer model makes Responsible AI executable.**  
-Each layer converts strategic intent into a specific engineering and governance artifact.
+### Making Responsible AI Executable
+Each layer converts strategic policy intent into a tangible engineering artifact.
+
+![5-Layer Controls Architecture](../assets/5-layer-controls-architecture.svg)
 
 ```mermaid
 flowchart TD
-    L1["<b>Layer 1: Risk Classification</b><br/>Use-case tiering based on consequence of error"]
-    L2["<b>Layer 2: Execution Boundary</b><br/>Explicit definitions: what AI can decide, draft, trigger, or automate"]
-    L3["<b>Layer 3: Control Design</b><br/>Guardrails, HITL approvals, schema validation, and escalation pathways"]
-    L4["<b>Layer 4: Evidence Capture</b><br/>Prompt, response, sources, override records, approval signoffs, replay logs"]
-    L5["<b>Layer 5: Day 2 Monitoring</b><br/>Quality drift, unsafe output detection, bypass attempts, vendor updates, incidents"]
+    L1["01. Risk Classification<br/>Use-case tiering based on consequence of error"]
+    L2["02. Execution Boundary<br/>Explicit definitions: what AI can decide, draft, trigger, or automate"]
+    L3["03. Control Design<br/>Guardrails, HITL approvals, schema validation, and escalation pathways"]
+    L4["04. Evidence Capture<br/>Prompt, response, sources, override records, approval signoffs, replay logs"]
+    L5["05. Day 2 Monitoring<br/>Quality drift, unsafe output detection, bypass attempts, vendor updates"]
 
     L1 --> L2
     L2 --> L3
@@ -51,59 +52,47 @@ flowchart TD
 
 ## Slide 3: Proportionality by Consequence of Error
 
-### PROPORTIONAL CONTROLS POSTURE
-**Controls must be proportional to the consequence of error.**  
-A low-impact internal productivity tool and an autonomous customer-facing financial or medical workflow should never carry the same control burden.
+### Controls Proportional to Consequence of Error
+A low-impact internal productivity assistant and an autonomous customer-facing financial or underwriting workflow should never carry the same control overhead.
 
-| Risk Tier | Representative Use Cases | Required Control Posture |
+| Risk Tier | Representative Use Cases | Control Posture & Requirements |
 |---|---|---|
-| **Low** | Internal summarization, developer assistance, search | Privacy filtering, quality checks, transparent user guidance. |
-| **Moderate** | Staff/adviser recommendation support, draft generation | Knowledge grounding (RAG), review triggers, structured evidence capture. |
-| **High** | Customer-facing claims, underwriting, credit, regulated advice | Mandatory human approval, causal explanations, audit replay ledger, continuous telemetry. |
+| **Low** | Internal summarization, employee search, coding assistance | Privacy filtering, quality checks, transparent user guidance. |
+| **Moderate** | Staff/adviser recommendation support, draft generation | Grounding verification (RAG), review triggers, structured evidence capture. |
+| **High** | Customer-facing claims, underwriting, credit, clinical advice | Mandatory human approval, causal explanations, audit replay ledger, continuous telemetry. |
 
 ---
 
 ## Slide 4: Day 2 Operational Reality
 
-### APPROVAL VS. CONTINUOUS OPERATIONS
-**Day 2 operations are where Responsible AI becomes real.**  
-Pre-launch sign-off is necessary; post-launch monitoring is what keeps controls alive amidst model updates and shifting data.
+### Approval Before Launch vs. Monitoring After Launch
+Day 2 operations are where Responsible AI becomes real. Pre-launch approval is necessary; post-launch monitoring is what keeps controls alive amidst model updates and shifting data.
 
-```mermaid
-flowchart LR
-    subgraph ControlsRun ["Controls That Run"]
-        C1["Runtime Guardrails"]
-        C2["Human-in-the-Loop Triggers"]
-        C3["Cryptographic Evidence Capture"]
-        C4["Exception Handling"]
-        C5["Control Telemetry"]
-    end
-
-    subgraph TriggerSignals ["Signals Triggering Action"]
-        S1["Quality & Metric Drift"]
-        S2["Unsafe Output / Hallucination"]
-        S3["Control Bypass Attempts"]
-        S4["Upstream Model/Vendor Changes"]
-        S5["Operational Incidents"]
-    end
-
-    ControlsRun <-->|"Continuous Feedback Loop"| TriggerSignals
-```
+![Day 2 Monitoring Loop](../assets/day-2-monitoring-loop.svg)
 
 ---
 
 ## Slide 5: The 4-Step Implementation Cadence
 
-### START FOCUSED, SCALE SYSTEMATICALLY
-**Start with one high-impact use case and prove the operating model.**  
-The fastest path to enterprise maturity is not multi-year theoretical abstraction—it is a focused control sprint producing validated evidence.
+### Start Focused, Scale Systematically
+Start with one or two high-impact use cases and prove the operating model. The fastest path to enterprise maturity is not multi-year theoretical abstraction—it is a focused control sprint producing validated evidence.
 
 ```mermaid
 flowchart LR
-    S1["<b>1. SCAN</b><br/>Identify use cases, governance flows, evidence gaps, and bottlenecks."] -->
-    S2["<b>2. TIER</b><br/>Classify consequence of error and define explicit decision boundaries."] -->
-    S3["<b>3. DESIGN</b><br/>Map controls, HITL triggers, validation, ownership, and evidence."] -->
-    S4["<b>4. OPERATE</b><br/>Run Day 2 cadence: incident reviews, telemetry, vendor updates, and continuous tuning."]
+    S1["1. SCAN<br/>Map use cases, governance<br/>flow, evidence gaps, and<br/>bottlenecks."] -->
+    S2["2. TIER<br/>Classify consequence of<br/>error and define explicit<br/>decision boundaries."] -->
+    S3["3. DESIGN<br/>Map controls, HITL triggers,<br/>validation, ownership, and<br/>evidence schemas."] -->
+    S4["4. OPERATE<br/>Run Day 2 cadence:<br/>incidents, exceptions, drift,<br/>and vendor change triage."]
 ```
 
-> **The Director's Rule:** *Responsible AI becomes credible only when it can be enforced, monitored, and evidenced.*
+> **The Director's Rule:**  
+> *Responsible AI becomes credible only when it can be **enforced, monitored, and evidenced**.*
+
+---
+
+## Next Steps & Reading Path
+
+* **Previous Document:** [02. One-Page Consulting Point of View](02-one-page-consulting-pov.md)
+* **Conduct a Diagnostic:** [04. Enterprise Client Discovery Checklist](04-enterprise-client-discovery-checklist.md)
+* **Read Thought Leadership:** [01. Thought Leadership Article](01-thought-leadership-article.md)
+* **Return to Main Overview:** [Repository README](../README.md)

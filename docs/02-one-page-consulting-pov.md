@@ -1,87 +1,70 @@
-# One-Page Consulting Point of View
+# One-Page Consulting Point of View: Responsible AI Controls Architecture
 
-One-Page Consulting Point of View
+> **Navigation:** [🏠 Overview](../README.md) | [📰 01. Thought Leadership](01-thought-leadership-article.md) | **📄 02. Consulting POV** | [📊 03. Mini Deck](03-five-slide-mini-deck.md) | [📋 04. Discovery Checklist](04-enterprise-client-discovery-checklist.md)
 
-Responsible AI Controls Architecture: a practical model for turning AI ethics, risk, and governance expectations into operating controls.
+---
 
-Core thesis
+## Executive Summary & Core Thesis
 
-Responsible AI maturity is not proven by principles alone. It is proven by whether high-impact AI use cases have clear boundaries, enforceable controls, evidence, ownership, monitoring, and repeatable Day 2 routines.
+> **Core Thesis:**  
+> Responsible AI maturity is not proven by ethical principles alone. It is proven by whether high-impact AI use cases have **clear boundaries, enforceable controls, immutable evidence, distinct ownership, continuous monitoring, and repeatable Day 2 operational routines**.
 
-Why This Matters
+![Responsible AI Controls Architecture](../assets/5-layer-controls-architecture.svg)
 
-Boards and regulators increasingly expect organizations to show how AI risks are governed in practice. For regulated enterprises, the critical gap is often not intent; it is execution. Policies describe what should happen, but teams need controls that define what the AI can do, when humans must intervene, what evidence is captured, and how incidents are monitored after deployment.
+---
 
-The Five-Layer Model
+## Why This Matters
 
-Layer
+Boards of Directors, Risk Committees, and Regulators increasingly expect enterprises to demonstrate how AI risks are governed **in practice**, not in theory. 
 
-Executive Question
+For regulated enterprises, the critical gap is rarely intent—it is **execution**:
+* Corporate policies describe *what should ideally happen*.
+* Engineering teams need runtime controls that define *what the AI is authorized to do*, *when humans must intervene*, *what evidence is captured*, and *how drift and incidents are monitored post-deployment*.
 
-Control Output
+---
 
-1. Risk classification
+## The Five-Layer Controls Architecture
 
-What happens if the AI is wrong?
+Each layer of the architecture converts strategic governance intent into a concrete engineering artifact:
 
-Use-case tiering by customer, financial, legal, operational, reputational, and safety impact.
+| Layer | Executive Question | Control Output & Engineering Artifact |
+|---|---|---|
+| **01. Risk Classification** | *What happens if the AI is wrong?* | Use-case tiering based on customer, financial, legal, operational, reputational, and safety consequence of error. |
+| **02. Execution Boundary** | *What can AI decide, recommend, or trigger?* | Decision rights matrix, automation limits, mandatory human review paths, and escalation thresholds. |
+| **03. Control Design** | *What prevents or detects misuse?* | Input guardrails, RAG grounding verification, sensitive data handling, schema validation, and output safety gates. |
+| **04. Evidence Capture** | *Can we prove what happened later?* | Cryptographic audit ledger recording prompt, context, response, rationale, approvals, overrides, and replay logs. |
+| **05. Day 2 Monitoring** | *How do we know controls keep working?* | Runtime telemetry for metric drift, output quality degradation, guardrail bypass alerts, vendor updates, and incidents. |
 
-2. Execution boundary
+---
 
-What can AI decide or trigger?
+## Maturity Progression: From Charters to Autonomous Governance
 
-Decision rights, automation limits, human approval paths, and escalation thresholds.
+![Maturity Curve](../assets/rai-maturity-model.svg)
 
-3. Control design
+---
 
-What prevents or detects misuse?
+## What This Architecture Enables
 
-Input controls, grounding, sensitive-data handling, validation checks, output constraints, and approval gates.
+1. **Faster AI Adoption Velocity:** Risk, boundary, and control expectations are defined *before* build or deployment, eliminating multi-month governance review backlogs.
+2. **Audit-Ready Evidence by Design:** System decisions, human sign-offs, exceptions, and monitoring alerts are captured automatically as a by-product of runtime execution.
+3. **Cross-Functional Accountability:** AI ownership is clearly delineated across Business Product Owners, Risk, Legal, Engineering, Security, and Data teams.
+4. **Resilient Day 2 Operations:** AI workloads are continuously monitored in production, ensuring safeguards adapt when underlying foundation models or user behaviors change.
 
-4. Evidence capture
+---
 
-Can we prove what happened later?
+## Enterprise Advisory Offer: 4-to-6 Week Control Sprint
 
-Prompt, response, sources, rationale, approvals, overrides, exceptions, and audit replay records.
+| Phase | Strategic Focus | Deliverable & Tangible Output |
+|---|---|---|
+| **Phase 1: Current-State Scan** (Weeks 1–2) | Inventory use cases, map approval workflows, identify evidence gaps, and isolate approval bottlenecks. | **AI Controls Heatmap** & prioritized high-impact scope. |
+| **Phase 2: Control Architecture** (Weeks 3–4) | Define consequence-of-error tiering, human decision boundaries, Policy-as-Code templates, and evidence schemas. | **Responsible AI Control Blueprint** customized by use-case risk tier. |
+| **Phase 3: Operating Model & Day 2** (Weeks 5–6) | Assign owners, define incident runbooks, configure telemetry thresholds, and establish Day 2 review cadences. | **Repeatable Governance & Day 2 Operations Playbook**. |
 
-5. Day 2 monitoring
+---
 
-How do we know controls keep working?
+## Next Steps & Reading Path
 
-Drift, quality, fairness, unsafe output, control bypass, vendor change, and incident monitoring.
-
-What This Enables
-
-Faster AI adoption because risk and control expectations are clear before build or deployment.
-
-Audit-ready evidence because decisions, approvals, exceptions, and monitoring signals are captured by design.
-
-Better business accountability because AI ownership is mapped across product, risk, legal, technology, security, data, and operations.
-
-Stronger Day 2 resilience because AI systems are monitored after launch, not only approved before launch.
-
-Consulting Offer
-
-Phase
-
-Focus
-
-Typical Output
-
-Current-state scan
-
-Use cases, approval flow, existing evidence, risk pain points.
-
-AI controls heatmap and prioritized scope.
-
-Control architecture
-
-Tiered controls, human boundaries, evidence templates, monitoring model.
-
-Responsible AI control framework by use-case risk tier.
-
-Operating model
-
-Owners, routines, exception handling, review forums, Day 2 workflow.
-
-Repeatable governance and operations playbook.
+* **Previous Document:** [01. Thought Leadership Article](01-thought-leadership-article.md)
+* **Present to the Board:** [03. Executive 5-Slide Mini Deck](03-five-slide-mini-deck.md)
+* **Assess Your Organization:** [04. Enterprise Client Discovery Checklist](04-enterprise-client-discovery-checklist.md)
+* **Return to Main Overview:** [Repository README](../README.md)
